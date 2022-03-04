@@ -1,0 +1,28 @@
+.todo-form {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-form__input {
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.todo-form__button {
+  width: 41px;
+  line-height: 25px;
+  background: linear-gradient(#2f6097, #54abfd);
+  border: 1px solid #4a9efd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
