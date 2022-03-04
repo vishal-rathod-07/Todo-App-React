@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container__title {
+  font-size: 3rem;
+  font-family: "Sora", sans-serif;
+}

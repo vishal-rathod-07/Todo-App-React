@@ -5,7 +5,7 @@ import "./container.css";
 const Container = () => {
   return (
     <div className='container'>
-      <h1 className='container__title'>Todo List</h1>
+      <h1 className='container__title'>Todo App</h1>
       <Todos />
     </div>
   );
