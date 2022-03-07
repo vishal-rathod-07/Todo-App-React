@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import "./todo-form.css";
+import "./todoitemcreator.css";
 
-const TodoForm = ({ addTodo }) => {
+const TodoItemCreator = ({ addTodo }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
@@ -31,4 +31,4 @@ const TodoForm = ({ addTodo }) => {
   );
 };
 
-export default TodoForm;
+export default TodoItemCreator;
