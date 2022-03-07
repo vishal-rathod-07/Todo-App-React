@@ -24,9 +24,16 @@
 .todo-item__label {
   width: 100%;
   padding: 0 10px;
+  border: none;
   border-right: 1px solid #d5e4ff;
   border-left: 1px solid #d5e4ff;
   line-height: 45px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.todo-item__label:focus {
+  outline: none;
 }
 
 .todo-item__checkbox:checked + .todo-item__label {
