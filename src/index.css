@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #ffc600;
+  text-align: center;
   font-family: "Sora", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
