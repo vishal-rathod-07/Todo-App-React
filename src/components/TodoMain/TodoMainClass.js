@@ -10,12 +10,6 @@ class TodoMainClass extends React.Component {
     this.state = {
       todos: [],
     };
-
-    this.addTodo = this.addTodo.bind(this);
-    this.addToLocalStorage = this.addToLocalStorage.bind(this);
-    this.completeTodo = this.completeTodo.bind(this);
-    this.editTodo = this.editTodo.bind(this);
-    this.removeTodo = this.removeTodo.bind(this);
   }
 
   componentDidMount() {

@@ -8,8 +8,6 @@ class TodoItemCreatorClass extends React.Component {
     this.state = {
       value: "",
     };
-
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit = (e) => {
