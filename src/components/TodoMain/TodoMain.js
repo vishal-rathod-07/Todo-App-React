@@ -34,15 +34,12 @@ const TodoMain = () => {
     });
     setTodos(newTodos);
     addToLocalStorage(newTodos);
-    // console.table(newTodos);
   };
 
   const removeTodo = (id) => {
-    // console.table(id);
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
     addToLocalStorage(newTodos);
-    // console.table(newTodos);
   };
 
   return (
