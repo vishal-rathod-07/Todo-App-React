@@ -6,11 +6,7 @@ import "./todomain.css";
 
 const TodoMain = () => {
   const [todos, setTodos] = useState(
-    JSON.parse(localStorage.getItem("todos")) || [
-      { id: 1, text: "Buy some stuff", isCompleted: true },
-      { id: 2, text: "Read the book", isCompleted: false },
-      { id: 3, text: "Play a game", isCompleted: false },
-    ]
+    JSON.parse(localStorage.getItem("todos")) || []
   );
 
   const addTodo = (text) => {
