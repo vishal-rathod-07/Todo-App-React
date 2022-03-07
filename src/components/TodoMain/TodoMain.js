@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import TodoForm from "../todo-form/todo-form";
-import TodoItem from "../todo-item/todo-item";
-import "./todos.css";
+import TodoItemCreator from "../TodoItemCreator/TodoItemCreator";
+import TodoItem from "../TodoItem/TodoItem";
+import "./todomain.css";
 
-const Todos = () => {
+const TodoMain = () => {
   const [todos, setTodos] = useState(
     JSON.parse(localStorage.getItem("todos")) || [
       { id: 1, text: "Buy some stuff", isCompleted: true },
@@ -50,8 +50,8 @@ const Todos = () => {
   };
 
   return (
-    <>
-      <TodoForm addTodo={addTodo} />
+    <div className='container'>
+      <TodoItemCreator addTodo={addTodo} />
       <ul className='todos'>
         {todos.map((todo) => (
           <TodoItem
@@ -62,8 +62,8 @@ const Todos = () => {
           />
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
-export default Todos;
+export default TodoMain;
