@@ -43,6 +43,7 @@ class TodoItemClass extends React.Component {
           value={this.props.todo.text}
           onChange={this.handleChange}
           onKeyDown={this.handleKey}
+          tabIndex='-1'
         />
         <button
           className='todo-item__button'
