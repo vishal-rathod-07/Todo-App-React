@@ -9,6 +9,7 @@ function App() {
       <header className='header'>
         <h1>Todo App</h1>
       </header>
+      {/* <TodoMain /> */}
       <TodoMainClass />
     </>
   );

@@ -36,6 +36,17 @@ const TodoMain = () => {
     addToLocalStorage(newTodos);
   };
 
+  const editTodo = (id, text) => {
+    const newTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        return { ...todo, text };
+      }
+      return todo;
+    });
+    setTodos(newTodos);
+    addToLocalStorage(newTodos);
+  };
+
   const removeTodo = (id) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
@@ -51,6 +62,7 @@ const TodoMain = () => {
             key={todo.id}
             todo={todo}
             completeTodo={completeTodo}
+            editTodo={editTodo}
             removeTodo={removeTodo}
           />
         ))}
