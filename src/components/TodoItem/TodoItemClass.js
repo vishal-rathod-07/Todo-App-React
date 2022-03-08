@@ -15,6 +15,12 @@ class TodoItemClass extends React.Component {
     this.props.editTodo(this.props.todo.id, e.target.value);
   };
 
+  handleKey = (e) => {
+    if (e.keyCode === 13 || e.keyCode === 27) {
+      e.target.blur();
+    }
+  };
+
   render() {
     return (
       <li className='todo-item' key={this.props.todo.id}>
@@ -31,10 +37,12 @@ class TodoItemClass extends React.Component {
           onChange={() => this.props.completeTodo(this.props.todo.id)}
         />
         <input
-          className='todo-item__label'
+          type='text'
+          className='todo-item__input'
           title='Click to edit task'
           value={this.props.todo.text}
           onChange={this.handleChange}
+          onKeyDown={this.handleKey}
         />
         <button
           className='todo-item__button'
