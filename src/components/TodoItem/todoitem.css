@@ -21,7 +21,7 @@
   margin: 1rem;
 }
 
-.todo-item__label {
+.todo-item__input {
   width: 100%;
   padding: 0 10px;
   border: none;
@@ -32,11 +32,12 @@
   font-size: inherit;
 }
 
-.todo-item__label:focus {
+.todo-item__input:focus {
   outline: none;
+  border: 1px solid #000;
 }
 
-.todo-item__checkbox:checked + .todo-item__label {
+.todo-item__checkbox:checked + .todo-item__input {
   background-color: #f9f9f9;
   text-decoration: line-through;
 }
